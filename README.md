@@ -15,8 +15,6 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
-![Project 1 Resource Overview](Diagrams/AzureNetwork.png)
-
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D\*mn Vulnerable Web Application.
@@ -86,7 +84,9 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-- _TODO: Specify which Beats you successfully installed_
+- 10.0.1.7
+- 10.0.1.6
+- 10.0.1.10
 
 These Beats allow us to collect the following information from each machine:
 
@@ -107,5 +107,3 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - \_Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._

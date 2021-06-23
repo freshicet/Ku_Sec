@@ -1,0 +1,58 @@
+Mission 1
+
+Determine and document the mail servers for starwars.com using NSLOOKUP.
+nslookup -type=mx starwars.com
+
+Explain why the Resistance isn't receiving any emails.
+The reason they can't get emails is the asltx.l.google.com,asltx.2.google.com are not showing up in the MX record right. 
+Document what a corrected DNS record should be.
+
+starwars.com    MX preference = 5, mail exchanger = alt1.aspx.l.google.com
+starwars.com    MX preference = 5, mail exchanger = alt2.aspmx.l.google.com
+starwars.com    MX preference = 10, mail exchanger = aspmx2.googlemail.com
+starwars.com    MX preference = 10, mail exchanger = aspmx3.googlemail.com
+starwars.com    MX preference = 1, mail exchanger = aspmx.l.google.com
+
+
+Mission 2
+
+Determine and document the SPF for theforce.net using NSLOOKUP.
+nslookup -type=txt theforce.net
+
+Explain why the Force's emails are going to spam.
+The reason they can't get emails is the IP 45.23.176.21 are not showing up in the MX record right. 
+
+Document what a corrected DNS record should be.
+v=spf1 a mx mx:smtp.secureserver.net include:aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215
+
+Mission 3
+
+
+Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
+nslookup -type=txt www.theforce.net
+
+
+Explain why the sub page of resistance.theforce.net isn't redirecting to theforce.net.
+The resistance.theforce.net is not set up to redirecting to theforce.net.
+
+Document what a corrected DNS record should be.
+www.theforce.net        canonical name = theforce.net
+
+
+Mission 4
+Confirm the DNS records for princessleia.site.
+nslookup -type=ns princessleia.site
+
+Document how you would fix the DNS record to prevent this issue from happening again.
+To fix the issue you would need to set the ns records to (ns2.galaxybackup.com) to work at this time.
+
+Mission 5
+Batuu > D > C > E > F > J > K > O > R > Q > T > V > Jedha 
+
+Mission 6
+The resistance will use these IP addresses to launch a retaliatory attack.
+IP: 172.16.0.101 Mac: 00:13:ce:55:98:ef
+IP: 172.16.0.1 Mac: 00:0f:66:e3:e4:01
+
+
+Mission 7
